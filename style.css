@@ -1,0 +1,256 @@
+/* Unique color for TyreFlex and add space between TyreFlex and Car Tyres */
+.navbar-brand {
+    color: #FF5733;
+    font-weight: bold;
+    margin-right: 20px; /* Space between TyreFlex and Car Tyres */
+}
+
+/* Add space between More and Login */
+.nav-item.ms-4 {
+    margin-left: 30px; /* Adjust the space as needed */
+}
+
+/* Hover effect with orange underline */
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+    bottom: -3px;
+    left: 0;
+}
+
+/* Dropdown menu styling */
+.nav-item .dropdown-menu {
+    background-color: white;
+}
+
+.nav-item .dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 160px;
+    padding: .5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 0.875rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+/* Style for dropdown items */
+.dropdown-menu .dropdown-item {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for dropdown items */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Custom styles for the slider and info container */
+
+/* Adjust the slider container to ensure cards have some spacing */
+.carousel-item {
+    padding: 10px;
+}
+
+/* Card styling */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Info container styling */
+.info-container {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel controls styling (optional) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Media query to adjust layout for smaller screens */
+@media (max-width: 767.98px) {
+    .carousel-item {
+        padding: 5px;
+    }
+
+    .info-container {
+        margin-top: 20px;
+    }
+}
+. .star-rating i {
+    cursor: pointer;
+    color: #ddd; /* Default color */
+    font-size: 2rem; /* Adjust size if needed */
+}
+.star-rating i.active,
+.star-rating i:hover,
+.star-rating i:hover ~ i {
+    color: #ffc107; /* Yellow color */
+}
+.star-rating i:hover ~ i {
+    color: #ddd; /* Revert color of stars after the hovered one */
+}
+
+.custom-carousel {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.custom-carousel .item {
+    flex: 0 0 auto;
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.custom-card {
+    text-align: center;
+    display: block;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem; /* Increased font size */
+    width: 200px; /* Increased width */
+}
+
+.brand-logo {
+    display: block;
+    height: 120px; /* Increased height */
+    width: 120px; /* Increased width */
+    margin: 0 auto 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.brand-mrf { background-image: url('mrfpic.png'); }
+.brand-ceat { background-image: url('Ceatpic.png'); }
+.brand-goodyear { background-image: url('goodyear.png'); }
+.brand-jktyres { background-image: url('jktyres.png'); }
+.brand-apollo { background-image: url('apollo.png'); }
+.brand-bridgestone { background-image: url('bridgestone.png');}
+.brand-michelin { background-image: url('michelin.png'); }
+
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.price-label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745; /* Green color */
+    background-color: #f8f9fa; /* Light background */
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.price-label.bold {
+    font-weight: bold;
+}
+
+.price-label.light {
+    background-color: #e9ecef; /* Light background color */
+}
+
+.price-label.green {
+    color: #28a745; /* Green color */
+}
+footer {
+    background-color: #f8f9fa; /* Light background color */
+    color: #212529; /* Dark text color */
+}
+
+footer a {
+    color: #212529; /* Dark text color for links */
+}
+
+footer a:hover {
+    color: #007bff; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer h5 {
+    font-size: 1.25rem; /* Adjust heading size */
+    margin-bottom: 1rem; /* Space below headings */
+}
+
+footer p {
+    margin-bottom: 0.5rem; /* Space below paragraphs */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    footer h5 {
+        font-size: 1.1rem; /* Slightly smaller headings on smaller screens */
+    }
+
+    footer p {
+        font-size: 0.875rem; /* Slightly smaller text on smaller screens */
+    }
+}
+
+h5.fw-bold {
+    font-weight: bold; /* Ensures the text is bold */
+    font-size: 1.5rem; /* Adjust font size */
+    color: #ff6600; /* Orange color */
+    text-transform: uppercase; /* Makes the text uppercase */
+    margin-bottom: 1rem; /* Adds space below the heading */
+    letter-spacing: 1px; /* Adds space between letters for a cleaner look */
+    border-bottom: 2px solid #ff6600; /* Adds a border below the heading */
+    padding-bottom: 0.5rem; /* Adds space between text and border */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition for hover effect */
+}
+
+h5.fw-bold:hover {
+    color: #6f42c1; /* Purple color on hover */
+    border-bottom: 2px solid #6f42c1; /* Changes border color on hover */
+}
+.social-icons i {
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: #333; /* Default color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-icons a:hover i {
+    color: #007bff; /* Change color on hover */
+}
+
